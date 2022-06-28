@@ -35,7 +35,7 @@
                 <li>
 
                 </li>
-                <!-- Stampare una MovieCard per ogni film con il ciclo -->
+                <!-- Future varie ed eventuali MovieCards -->
             </ul>
 
         </div>
