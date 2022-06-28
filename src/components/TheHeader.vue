@@ -23,7 +23,7 @@ export default {
     },
     methods: {
         onsearchMovie() {
-            searchMovie(this.currentSearch, 'movie')
+            searchMovie(this.currentSearch)
         }
 
     }
