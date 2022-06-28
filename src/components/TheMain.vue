@@ -26,6 +26,8 @@
 
             </ul>
 
+            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
+
         </div>
 
         <div id="container seriesList">
