@@ -5,29 +5,28 @@
             <ul class="list-unstyled text-center" v-for="(movie, i) in moviesList" :key="i">
                 <li class="text-start">
                     {{ movie.id }}
-                    <!-- id number of films -->
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Title</span> :
-                    <span class="text-success">{{ movie.title }}</span> <!-- title of films -->
+                    <span class="text-success">{{ movie.title }}</span>
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Original Title</span> :
-                    <span class="text-danger">{{ movie.original_title }}</span> <!-- original title of films -->
+                    <span class="text-danger">{{ movie.original_title }}</span>
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Languages </span> :
-                    <span class="text-info">{{ movie.original_language }}</span> <!-- languages of films -->
+                    <span class="text-info">{{ movie.original_language }}</span>
                 </li>
                 <li class="my-2 border-bottom">
                     <span class="text-primary">Vote </span> :
-                    <span class="">{{ movie.vote_average }}</span> <!-- vote_average of films -->
+                    <span class="">{{ movie.vote_average }}</span>
                 </li>
-
             </ul>
-
             <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
-
+            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
+            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
+            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
         </div>
 
         <div id="container seriesList">
@@ -64,4 +63,5 @@ export default {
 
 
 <style>
+
 </style>
