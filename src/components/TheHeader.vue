@@ -1,35 +1,47 @@
 <template>
-    <div class="row align-items-center justify-content-around">
-        <div class="col-2">
-            <h1>Boolflix</h1>
-        </div>
-        <div class="col-4">
-            <div class="input-group mb-3 px-3 py-5">
-                <input v-model="currentSearch" type="text" class="form-control">
-                <button @click="onsearchMovie" class="btn btn-outline-secondary" type="button">Search</button>
+    <div class="under-bar">
+        <div class="container py-3">
+            <div class="input-group mt-2 mb-2">
+                <h1 class="text-danger">Boolflix</h1>
+                <input type="text" class="form-control" placeholder="Enter here the title of the content you want to see"
+                    v-model="userSearch" aria-describedby="button-addon2">
+                <button class="btn btn-danger" type="button" id="button-addon2"
+                    @click="onSearch">Search</button>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import { searchMovie } from '../store';
+import { searchMovies } from "../store";
 export default {
-    name: 'TheHeader',
     data() {
         return {
-            currentSearch: ''
+            name: "TheHeader",
+            userSearch: "",
         }
     },
     methods: {
-        onsearchMovie() {
-            searchMovie(this.currentSearch)
+        onSearch() {
+            console.log(this.userSearch)
+            searchMovies(this.userSearch)
         }
-
     }
 }
 </script>
 
+<style scoped>
+.under-bar {
+    background-color: cadetblue;
+}
+.input-group {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-<style scoped lang="scss">
+h1.text-danger {
+    margin-right: 15vw;
+    font-weight: 700;
+}
 </style>
