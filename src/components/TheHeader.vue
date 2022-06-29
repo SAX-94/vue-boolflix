@@ -4,7 +4,7 @@
             <div class="input-group mt-2 mb-2">
                 <h1 class="text-danger text-uppercase">Boolflix</h1>
                 <input type="text" class="form-control" placeholder="Enter here the title of the content you want to see"
-                    v-model="userSearch" aria-describedby="button-addon2">
+                    v-model="userSearch" @keyup.enter="onSearch" aria-describedby="button-addon2">
                 <button class="btn btn-danger" type="button" id="button-addon2"
                     @click="onSearch">Search</button>
             </div>
