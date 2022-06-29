@@ -7,6 +7,7 @@ export const state = Vue.observable({
 });
 
 export function searchMovies(userSearch) {
+/* --- MOVIES --- */
     axios
         .get("https://api.themoviedb.org/3/search/movie", {
             params: {
@@ -18,7 +19,7 @@ export function searchMovies(userSearch) {
         .then((resp) => {
             state.moviesList = resp.data.results;
         });
-
+/* --- TV SERIES --- */
     axios
         .get("https://api.themoviedb.org/3/search/tv", {
             params: {
