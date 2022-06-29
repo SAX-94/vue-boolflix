@@ -3,8 +3,9 @@
         <div class="container py-3">
             <div class="input-group mt-1 mb-1">
                 <h1 class="text-danger text-uppercase">Boolflix</h1>
-                <input type="text" class="form-control mt-3 mb-3" placeholder="Enter here the title of the content you want to see"
-                    v-model="userSearch" @keyup.enter="onSearch" aria-describedby="button-addon2">
+                <input type="text" class="form-control mt-3 mb-3"
+                    placeholder="Enter here the title of the content you want to see" v-model="userSearch"
+                    @keyup.enter="onSearch" aria-describedby="button-addon2">
                 <button class="btn btn-danger mt-3 mb-3" type="button" id="button-addon2"
                     @click="onSearch">Search</button>
             </div>
@@ -31,11 +32,12 @@ export default {
 </script>
 
 <style scoped>
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .under-bar {
     background-color: cadetblue;
 }
+
 .input-group {
     width: 80vw;
     margin-left: auto;
