@@ -3,7 +3,7 @@
         <div class="container py-3">
             <div class="input-group mt-1 mb-1">
                 <h1 class="text-danger text-uppercase">Boolflix</h1>
-                <input type="text" class="form-control" placeholder="Enter here the title of the content you want to see"
+                <input type="text" class="form-control mt-3 mb-3" placeholder="Enter here the title of the content you want to see"
                     v-model="userSearch" @keyup.enter="onSearch" aria-describedby="button-addon2">
                 <button class="btn btn-danger" type="button" id="button-addon2"
                     @click="onSearch">Search</button>
