@@ -1,7 +1,7 @@
 <template>
     <div class="under-bar">
         <div class="container py-3">
-            <div class="input-group mt-2 mb-2">
+            <div class="input-group mt-1 mb-1">
                 <h1 class="text-danger text-uppercase">Boolflix</h1>
                 <input type="text" class="form-control" placeholder="Enter here the title of the content you want to see"
                     v-model="userSearch" @keyup.enter="onSearch" aria-describedby="button-addon2">
@@ -31,6 +31,8 @@ export default {
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .under-bar {
     background-color: cadetblue;
 }
@@ -42,6 +44,8 @@ export default {
 
 h1.text-danger {
     margin-right: 15vw;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
 }
 </style>
