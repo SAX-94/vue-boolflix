@@ -10,6 +10,7 @@
 <script>
 import TheHeader from './components/TheHeader.vue';
 import TheMain from './components/TheMain.vue';
+
 export default {
   name: 'App',
   components: {
@@ -20,4 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./assets/scss/main.scss"
 </style>
