@@ -24,11 +24,10 @@
                 <li class="my-2">
                     <span class="text-primary">Languages </span> :
                     <span class="text-info">{{ movie.original_language }}</span>
-                    <lang-flag :iso="movie.original_language"></lang-flag> <!-- lOriginal laguage -->
+                    <lang-flag :iso="movie.original_language"></lang-flag> <!-- Original laguage -->
                 </li>
                 <li class="my-2 border-bottom">
                     <span class="text-primary">Vote </span> :
-                    <span v-html="getStars(movie)"></span> <!-- Average vote -->
                 </li>
             </ul>
         </div>
@@ -43,7 +42,7 @@
                 </li>
                 <li>
                     <div class="container text-start">
-                        <span class="text-secondary fs-3">TV series:</span>
+                        <span class="text-primary fs-3">TV series:</span>
                     </div>
                 </li>
                 <li class="my-2 ">
@@ -64,10 +63,7 @@
                     <span v-html="getStars(serie)"></span> <!-- vote_average of series -->
                 </li>
             </ul>
-
         </div>
-
-
     </div>
 </template>
 
@@ -89,23 +85,6 @@ export default {
         },
         boolflixPoster() {
             return "https://image.tmdb.org/t/p/" + "w342/"
-        },
-
-    },
-    methods: {
-        // function for my stars under img
-        getStars(vote) {
-            const votes = Math.ceil(vote.vote_average / 2);
-            const fullStar = [];
-            const emptyStar = [];
-            for (let i = 0; i < votes; i++) {
-                fullStar.push("<i class=\"fa fa-solid fa-star\"></i>");
-            }
-            for (let i = 0; i < (5 - votes); i++) {
-                emptyStar.push("<i class=\"fa fa-regular fa-star\"></i>")
-            }
-            const fullVotes = fullStar.join("") + emptyStar.join("");
-            return fullVotes
         },
     },
 }
