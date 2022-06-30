@@ -23,10 +23,6 @@
                     <span class="">{{ movie.vote_average }}</span>
                 </li>
             </ul>
-            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
-            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
-            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
-            <!-- RICORDARE DI APPROSSSIMARE LE STELLE A UN NUMERO INTERO -->
         </div>
 
         <div id="container seriesList">
