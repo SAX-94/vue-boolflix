@@ -23,7 +23,7 @@
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Languages </span> :
-                    <span class="text-info">{{ movie.original_language }}</span>
+                    <span class="text-info">{{ movie.original_language }} </span>
                     <lang-flag :iso="movie.original_language"></lang-flag> <!-- Original laguage -->
                 </li>
                 <li class="my-2 border-bottom">
