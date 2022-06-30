@@ -15,7 +15,7 @@
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Title: </span> 
-                    <span class="text-success">{{ movie.title }}</span> <!-- MOvie title -->
+                    <span class="text-success">{{ movie.title }}</span> <!-- Movie title -->
                 </li>
                 <li class="my-2">
                     <span class="text-primary">Original Title: </span> 
@@ -24,7 +24,7 @@
                 <li class="my-2">
                     <span class="text-primary">Languages: </span>
                     <span class="text-info">{{ movie.original_language }} </span>
-                    <lang-flag :iso="movie.original_language"></lang-flag> <!-- Original laguage -->
+                    <lang-flag :iso="movie.original_language"></lang-flag> <!-- Original language -->
                 </li>
                 <li class="my-2 border-bottom">
                     <span class="text-primary">Vote </span> :
